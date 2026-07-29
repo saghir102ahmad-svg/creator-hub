@@ -1,0 +1,5 @@
+# No external dependencies required!
+# Creator Hub uses only Python standard library modules:
+# - http.server (built-in web server)
+# - sqlite3 (built-in database)
+# - json, os, sys, re, urllib (all built-in)
