@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Creator Hub | Portfolio, Videos, Gaming, Podcasts & Products</title>
+  <meta name="description" content="Personal creator hub, YouTube videos, Gaming streams, podcast episodes, courses, digital product bundles, and business inquiries.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Ambient Glow Background Effects -->
+  <div class="bg-glow-1"></div>
+  <div class="bg-glow-2"></div>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="nav-brand">
+      <img id="nav-avatar" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80" alt="Avatar" class="nav-avatar-mini">
+      <span id="nav-name">Alex Rivera</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#videos" class="nav-link">Videos</a></li>
+      <li><a href="#podcasts" class="nav-link">Podcasts</a></li>
+      <li><a href="#courses" class="nav-link">Courses & Bundles</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <!-- Theme Switcher -->
+      <select id="theme-select" class="theme-selector">
+        <option value="default">🌌 Cyberpunk Dark</option>
+        <option value="neon">⚡ Neon Glass</option>
+        <option value="midnight">🌙 Midnight Blue</option>
+      </select>
+      <a href="#contact" class="btn btn-primary" style="padding: 0.5rem 1.1rem; font-size: 0.85rem;">Work With Me</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="container">
+      <div class="hero-profile">
+        <img id="hero-avatar" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80" alt="Profile Avatar" class="hero-avatar">
+      </div>
+
+      <h1 id="hero-name" class="hero-name">Alex Rivera</h1>
+      <p id="hero-tagline" class="hero-tagline">Content Creator, Educator & Tech Entrepreneur</p>
+      <p id="hero-bio" class="hero-bio">
+        I create in-depth videos on modern web development, gaming content, AI technology, and digital design.
+      </p>
+
+      <!-- Quick Social Links Bar -->
+      <div class="social-links">
+        <a id="link-instagram" href="https://instagram.com" target="_blank" class="social-btn">
+          <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          Instagram
+        </a>
+        <a id="link-youtube" href="https://youtube.com" target="_blank" class="social-btn">
+          <svg viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+          YouTube Channel
+        </a>
+        <button id="copy-email-btn" class="social-btn">
+          <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+          <span id="btn-email-text">Business Email</span>
+        </button>
+      </div>
+
+      <!-- Stats Grid -->
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div id="stat-subs" class="stat-number">125K+</div>
+          <div class="stat-label">YouTube Subscribers</div>
+        </div>
+        <div class="stat-card">
+          <div id="stat-followers" class="stat-number">45K+</div>
+          <div class="stat-label">Instagram Community</div>
+        </div>
+        <div class="stat-card">
+          <div id="stat-students" class="stat-number">8.2K+</div>
+          <div class="stat-label">Course Students</div>
+        </div>
+        <div class="stat-card">
+          <div id="stat-products" class="stat-number">14+</div>
+          <div class="stat-label">Digital Products</div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Global Live Search Bar -->
+  <div class="container">
+    <div class="search-container">
+      <span class="search-icon">🔍</span>
+      <input type="text" id="global-search" class="search-input" placeholder="Search videos, gaming streams, courses, and guides...">
+    </div>
+  </div>
+
+  <!-- About Me Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge badge-violet">My Journey</span>
+        <h2 class="section-title">About Me</h2>
+        <p class="section-subtitle">Empowering creators, gamers, and engineers through video tutorials, game dev courses, and tools.</p>
+      </div>
+
+      <div style="background: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: var(--radius-lg); padding: 2.5rem; backdrop-filter: blur(16px);">
+        <p style="font-size: 1.1rem; color: var(--text-main); margin-bottom: 1.5rem;">
+          Welcome to my digital corner! I specialize in full-stack software development, gaming content creation, UI/UX architecture, and tech tutorials.
+        </p>
+        <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+          <span class="badge badge-cyan">Full-Stack Dev</span>
+          <span class="badge badge-pink">🎮 Gaming & Streaming</span>
+          <span class="badge badge-violet">UI/UX Design</span>
+          <span class="badge badge-emerald">YouTube Creator</span>
+          <span class="badge badge-cyan">Python & REST APIs</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Videos Section with Gaming Category -->
+  <section id="videos" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge badge-emerald">YouTube & Gaming Library</span>
+        <h2 class="section-title">Featured Videos</h2>
+        <p class="section-subtitle">Click any video card to watch directly in the interactive player.</p>
+      </div>
+
+      <!-- Category Filter Buttons including Gaming! -->
+      <div class="filters-bar" id="video-filters">
+        <button class="filter-btn active" data-category="All">All Videos</button>
+        <button class="filter-btn" data-category="Gaming">🎮 Gaming</button>
+        <button class="filter-btn" data-category="Tutorials">Tutorials</button>
+        <button class="filter-btn" data-category="Reviews">Reviews</button>
+        <button class="filter-btn" data-category="Design">Design</button>
+        <button class="filter-btn" data-category="Vlogs">Vlogs</button>
+      </div>
+
+      <!-- Video Grid -->
+      <div id="video-grid" class="video-grid"></div>
+    </div>
+  </section>
+
+  <!-- Podcast & Audio Clips Section -->
+  <section id="podcasts" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge badge-violet">Audio Episodes</span>
+        <h2 class="section-title">Podcast & Audio Clips</h2>
+        <p class="section-subtitle">Listen to in-depth conversations on tech trends, gaming, business, and creator strategy.</p>
+      </div>
+
+      <div id="podcast-list" style="max-width: 800px; margin: 0 auto;"></div>
+    </div>
+  </section>
+
+  <!-- Courses & Bundles Section -->
+  <section id="courses" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge badge-cyan">Digital Store</span>
+        <h2 class="section-title">Courses & Product Bundles</h2>
+        <p class="section-subtitle">Comprehensive masterclasses, gaming packs, and digital toolkits built to accelerate your learning.</p>
+      </div>
+
+      <!-- Products Grid -->
+      <div id="products-grid" class="products-grid"></div>
+    </div>
+  </section>
+
+  <!-- VIP Newsletter Section -->
+  <section class="section">
+    <div class="container">
+      <div class="newsletter-card">
+        <h2 class="newsletter-title">Join 15,000+ VIP Creators & Gamers</h2>
+        <p style="color: var(--text-muted); max-width: 550px; margin: 0 auto;">
+          Get exclusive weekly web dev tutorials, gaming setup guides, code templates, and creator tips delivered straight to your inbox.
+        </p>
+        <form id="newsletter-form" class="newsletter-form">
+          <input type="email" id="newsletter-email" class="form-input" placeholder="Enter your email address..." required style="flex-grow: 1;">
+          <button type="submit" class="btn btn-primary" style="white-space: nowrap;">Subscribe Free</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Business Inquiry & Contact Section -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge badge-violet">Get In Touch</span>
+        <h2 class="section-title">Business Inquiries</h2>
+        <p class="section-subtitle">Have a sponsorship proposal, gaming partnership, or course question?</p>
+      </div>
+
+      <div class="contact-container">
+        <div>
+          <h3 class="contact-info-title">Let's Collaborate</h3>
+          <p style="color: var(--text-muted); margin-bottom: 1.5rem;">
+            Whether you want to sponsor a YouTube video or stream, book a 1-on-1 strategy call, or ask about course access, send a message directly to my inbox!
+          </p>
+
+          <div class="contact-email-box">
+            <div>
+              <div style="font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase; font-weight: 700;">Direct Business Email</div>
+              <div id="contact-display-email" style="font-weight: 600; color: var(--accent-cyan);">alex.rivera.biz@example.com</div>
+            </div>
+            <button id="copy-email-btn-2" class="btn btn-outline" style="padding: 0.4rem 0.8rem; font-size: 0.8rem;">Copy</button>
+          </div>
+        </div>
+
+        <!-- Inquiry Form -->
+        <form id="inquiry-form">
+          <div class="form-group">
+            <label class="form-label" for="form-name">Your Full Name</label>
+            <input type="text" id="form-name" class="form-input" placeholder="e.g. Jane Doe" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="form-email">Your Email Address</label>
+            <input type="email" id="form-email" class="form-input" placeholder="e.g. jane@example.com" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="form-subject">Subject</label>
+            <select id="form-subject" class="form-select">
+              <option value="Sponsorship & Partnership">Sponsorship & Gaming Partnership</option>
+              <option value="1-on-1 Consultation">1-on-1 Consultation</option>
+              <option value="Course Inquiry">Course / Bundle Inquiry</option>
+              <option value="General Message">General Message</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="form-message">Message Details</label>
+            <textarea id="form-message" class="form-textarea" rows="4" placeholder="Tell me about your project, gaming request, or inquiry..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width: 100%;">Send Inquiry</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Video Player Modal -->
+  <div id="video-modal" class="modal-overlay">
+    <div class="modal-content">
+      <button class="modal-close" id="close-video-modal">&times;</button>
+      <iframe id="modal-iframe" class="video-player-frame" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <h3 id="modal-video-title" style="font-size: 1.4rem; font-weight: 700; margin-bottom: 0.5rem;"></h3>
+      <p id="modal-video-desc" style="color: var(--text-muted); font-size: 0.95rem;"></p>
+    </div>
+  </div>
+
+  <!-- Course Curriculum Modal -->
+  <div id="course-modal" class="modal-overlay">
+    <div class="modal-content">
+      <button class="modal-close" id="close-course-modal">&times;</button>
+      <h3 id="modal-course-title" style="font-size: 1.5rem; font-weight: 700; margin-bottom: 0.5rem;"></h3>
+      <p id="modal-course-desc" style="color: var(--text-muted); margin-bottom: 1.5rem;"></p>
+      
+      <h4 style="font-size: 1.1rem; color: var(--accent-cyan); margin-bottom: 0.75rem;">Curriculum Breakdown</h4>
+      <div id="modal-course-curriculum" style="white-space: pre-line; background: rgba(0,0,0,0.4); padding: 1.25rem; border-radius: var(--radius-md); font-family: monospace; font-size: 0.9rem; margin-bottom: 1.5rem;"></div>
+
+      <div style="display: flex; justify-content: space-between; align-items: center;">
+        <div id="modal-course-price" style="font-size: 1.75rem; font-weight: 800; color: var(--accent-emerald);"></div>
+        <button class="btn btn-primary" onclick="alert('Enrollment / Checkout flow initialized!')">Enroll Now</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Admin Customizer & Content Manager Modal with Image Editing -->
+  <div id="admin-modal" class="modal-overlay">
+    <div class="modal-content" style="max-width: 650px;">
+      <button class="modal-close" id="close-admin-modal">&times;</button>
+      <h3 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 0.5rem; color: var(--accent-violet);">Admin Control Center (DB & Images)</h3>
+      
+      <!-- Admin Navigation Tabs -->
+      <div style="display: flex; gap: 0.5rem; margin-bottom: 1.5rem; border-bottom: 1px solid var(--border-subtle); padding-bottom: 0.5rem; flex-wrap: wrap;">
+        <button class="btn btn-outline admin-tab-btn active" data-tab="tab-profile">Edit Profile & Avatar</button>
+        <button class="btn btn-outline admin-tab-btn" data-tab="tab-add-video">➕ Add Video (Gaming/etc)</button>
+        <button class="btn btn-outline admin-tab-btn" data-tab="tab-inquiries">View Messages</button>
+      </div>
+
+      <!-- Tab 1: Profile & Avatar Image Edit -->
+      <div id="tab-profile" class="admin-tab-content">
+        <form id="admin-profile-form">
+          <div class="form-group">
+            <label class="form-label">Full Creator Name</label>
+            <input type="text" id="admin-name" class="form-input" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Profile Avatar Image URL 🖼️</label>
+            <input type="url" id="admin-avatar-url" class="form-input" placeholder="Paste your custom avatar image link..." required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Tagline</label>
+            <input type="text" id="admin-tagline" class="form-input" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Bio Description</label>
+            <textarea id="admin-bio" class="form-textarea" rows="3" required></textarea>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Instagram URL</label>
+            <input type="url" id="admin-instagram" class="form-input" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">YouTube Channel URL</label>
+            <input type="url" id="admin-youtube" class="form-input" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Business Email</label>
+            <input type="email" id="admin-email" class="form-input" required>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width: 100%;">Save Profile & Image to Database</button>
+        </form>
+      </div>
+
+      <!-- Tab 2: Add Video to Web (Supports Gaming & Custom Thumbnails!) -->
+      <div id="tab-add-video" class="admin-tab-content" style="display: none;">
+        <form id="add-video-form">
+          <div class="form-group">
+            <label class="form-label">Video Title</label>
+            <input type="text" id="add-video-title" class="form-input" placeholder="e.g. My Apex Legends Gameplay or Web Dev Tutorial" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">YouTube Link or Video ID</label>
+            <input type="text" id="add-video-url" class="form-input" placeholder="e.g. https://www.youtube.com/watch?v=dQw4w9WgXcQ" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Category</label>
+            <select id="add-video-category" class="form-select">
+              <option value="Gaming">🎮 Gaming</option>
+              <option value="Tutorials">Tutorials</option>
+              <option value="Reviews">Reviews</option>
+              <option value="Design">Design</option>
+              <option value="Vlogs">Vlogs</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Custom Thumbnail Image URL (Optional) 🖼️</label>
+            <input type="url" id="add-video-thumb" class="form-input" placeholder="Leave blank to auto-detect YouTube thumbnail">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Duration (e.g. 18:40)</label>
+            <input type="text" id="add-video-duration" class="form-input" placeholder="18:40" value="15:00">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Description</label>
+            <textarea id="add-video-desc" class="form-textarea" rows="2" placeholder="Brief summary of this video..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width: 100%;">🚀 Publish Video & Thumbnail to Web</button>
+        </form>
+      </div>
+
+      <!-- Tab 3: Inquiries Inbox -->
+      <div id="tab-inquiries" class="admin-tab-content" style="display: none;">
+        <div id="inquiries-inbox" style="display: flex; flex-direction: column; gap: 1rem;"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Floating Admin Control Center Button -->
+  <button id="open-admin-btn" class="admin-trigger-btn">
+    ⚙️ Admin Control Center
+  </button>
+
+  <!-- Toast Notification -->
+  <div id="toast" class="toast">Action completed successfully!</div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 <span id="footer-name">Alex Rivera</span>. Powered by Creator Hub REST API & SQLite.</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
