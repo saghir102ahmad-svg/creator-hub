@@ -1,0 +1,20 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# SQLite database (Railway will create a fresh one on deploy)
+backend/creator_hub.db
+
+# Environment files
+.env
+*.env
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
